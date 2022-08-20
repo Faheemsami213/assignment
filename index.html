@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class Assignment</title>
+    <link rel="stylesheet" href="./style.css">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> 
+     <link href="https://fonts.googleapis.com/css2?family=Anek+Latin:wght@200&family=Anonymous+Pro&family=Fjalla+One&family=Inter&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>THANK YOU SMIT SAYLANI FOR GIVE ME A CHANCE</h1>
+    <div class="container">
+        <div class="faq">
+            <div class="question">
+                <p>1 Write a JavaScript function that reverse a number.</p>
+               <span id="expandBtn" class="material-symbols-outlined">expand_more</span>
+            </div>
+            <div class="answer">
+                <p class="codeAns1">
+                    let exampl1  = 223723 
+                    function assignmentOne(){<br/>
+                    let output   = ""; <br/>                                            
+                        let arrayOfStrNumbers =  exampl1.toString().split("") <br/>                                                  
+                        for(let i = arrayOfStrNumbers.length - 1 ; i >= 0 ;  i--){  <br/>
+                            output += arrayOfStrNumbers[i]<br/>                                               
+                            output = parseInt(output)<br/>
+
+                        }
+                        return output
+                        
+                    }`
+                </p> 
+                <button onclick="reversNum()">CHEAKOUT OUT CONSOLE</button>
+            </div>
+        </div>
+          <div class="faq">     
+                    <div class="question">
+                        <p>2 Write a JavaScript function that checks whether a passed string is palindrome or not?</p>
+                    <span class="material-symbols-outlined">expand_more</span>
+                    </div>
+                     <div class="answer">
+                        <p id="codeAns2">
+                            function cheakPalindrome(){<br/>
+                                let output = "" ;<br/>
+                                let arrOfStrItems = userInput.split("")<br/>
+                                for(let i = arrOfStrItems.length - 1 ; i >= 0 ;  i--){<br/>
+                                    output += arrOfStrItems[i]<br/>
+                                }<br/>
+                                console.log(output ===  userInput ? <br/>
+                                                      `${userInput} is a palindrom word ` :<br/>
+                                                       `${userInput} is not palindrom word`)<br/>
+                            
+                             }
+                            
+                        </p>
+                        <button onclick="cheakPalindrome()">CHEAKOUT OUT CONSOLE</button>
+                    </div>
+            </div> 
+            <div class="faq">
+                    <div class="question">
+                        <p>3 Write a JavaScript function that generates all combinations of a string.</p>
+                    <span class="material-symbols-outlined">expand_more</span>
+                </div>
+
+                     <div class="answer">
+                    <p id = "codeAns3"> 
+                        function generateCombu(example){<br/>
+                            var word = [];<br/>
+                            var result = [];<br/>
+                            for (i=0;i"<"example.length;i++){<br/>
+                                word = [example[i]]<br/>
+                                var index=0;<br/>
+                                while(result[index]){<br/>
+                                    word.push(`${result[index]} ${example[i]}`);<br/>
+                                    index++;
+                                
+                                 }<br/>
+                            result = result.concat(word);
+                        }<br/>
+                            return console.log(result);
+                        
+                        }
+                    </p>
+                        <button onclick="generateCombu()">CHEAKOUT OUT CONSOLE</button>
+                    </div>
+            </div>
+            <div class="faq">
+                    <div class="question">
+                        <p>4 Write a JavaScript function that returns a passed string with letters in alphabetical orde</p>
+                    <span class="material-symbols-outlined">expand_more</span>
+                </div>
+
+                     <div class="answer">
+                        <p id = "codeAns4"> 
+                            function tuntToalpha(example){<br/>
+                                return console.log(example.split('').sort().join(''));
+                                  }<br/>
+                                tuntToalpha("webmaster");<br/>
+                                
+                                function  converIntoUpperCase(exampl)
+                                {<br/>
+                                  var array1 = exampl.split(' ');<br/>
+                                  var arry2 = [];
+                        </p>
+                        <button onclick="tuntToalpha()">CHEAKOUT OUT CONSOLE</button>
+                    </div>
+            </div>
+            <div class="faq">
+                    <div class="question">
+                        <p>5 Write a function that converts the first letter of each word of the str in upperCase.</p>
+                    <span class="material-symbols-outlined">expand_more</span>
+                </div>
+
+                     <div class="answer">
+                        <p id = "codeAns5"> 
+                            function  converIntoUpperCase(exampl){<br/>
+                                        var array1 = exampl.split(' ');<br/>
+                                        var arry2 = [];<br/>
+                                            
+                                        for(var i = 0; i < array1.length; i++){<br/>
+                                            arry2.push(`${array1[i].charAt(0)<br/>.toUpperCase()}${array1[i].slice(1)}`);
+                                        }<br/>
+                                        return console.log(arry2.join(' '));<br/>
+                                        }
+                        </p>
+                        <button onclick="converIntoUpperCase()">CHEAKOUT OUT CONSOLE</button>
+                    
+                    </div>
+            </div>
+            <div class="faq">
+                    <div class="question">
+                        <p>6 Write a function that accepts a string as a parameter and find the longest word within the string</p>
+                    <span class="material-symbols-outlined">expand_more</span>
+                </div>
+
+                     <div class="answer">
+                        <p id = "codeAns6">
+                            function cheakLongestWordLength(str) {<br/>
+                                let words = str.split(' ');<br/>
+                                let maximumLength = 0<br/>
+                                for (let i = 0; i < words.length; i++) {<br/>
+                                  if (words[i].length > maximumLength) {<br/>
+                                    maximumLength = words[i].length;    <br/>
+                                  }<br/>
+                                }
+                                return maximumLength;
+                              }<br/>
+                              
+                         
+                        </p>
+                        <button onclick="cheakVowels()">CHEAKOUT OUT CONSOLE</button>
+                    </div>
+                    
+            </div>
+            <div class="faq">
+                    <div class="question">
+                        <p>7 Write a function that counts the number of vowels within the string</p>
+                    <span class="material-symbols-outlined">expand_more</span>
+                </div>
+
+                     <div class="answer">
+                        <p id = "codeAns7">
+                            function cheakVowels(xyz){<br/>
+                                const vowels = "aeiou"<br/>
+                                var count = 0<br/>
+                                for(let i = 0 ; i "<"= xyz.length;i++){<br/>
+                                        if(vowels.indexOf(xyz[i]) !== -1){<br/>
+                                            count += 1  <br/>
+                                        }}<br/>
+                                return count<br/>
+
+                            }
+                        </p>
+                        <button onclick="cheakLongestWordLength()">CHEAKOUT OUT CONSOLE</button>
+                    </div>
+            </div>
+            <div class="faq">
+                    <div class="question">
+                        <p>8. Write a function that accepts a number as a parameter and check the number is prime or not</p>
+                    <span class="material-symbols-outlined">expand_more</span>
+                </div>
+
+                     <div class="answer">
+                        <p id = "codeAns8"> 
+                            function cheakPrime(n){<br/>
+                             if (n===1){<br/>
+                                return false;<br/>
+                              }<br/>
+                              else if(n === 2) {<br/>
+                                return true;<br/>
+                              }
+                        else0{for(var x = 2; x "<" n; x++){<br/>
+                                  if(n % x === 0){<br/>
+                                return false; }}<br/>
+                                return true;  <br/>
+                              }}
+                        <button onclick="cheakPrime()">CHEAKOUT OUT CONSOLE</button>
+                    </div>
+            </div>
+            <div class="faq">
+                <div class="question">
+                    <p>9 Write a JavaScript function which accepts an argument and returns the type.
+                <span class="material-symbols-outlined">expand_more</span>
+                </div>
+                <div class="answer"><button>CHEAK OUT CONSOLE</button></div>
+            </div>
+      
+        
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
+
